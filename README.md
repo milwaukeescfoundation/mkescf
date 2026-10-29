@@ -37,3 +37,13 @@ This replaces the starter `index.html` and adds the other pages. It does not req
 ## Contact form limitation
 
 GitHub Pages is static hosting and does not process form submissions on its own. Once the public email is set in `script.js`, this form prepares a message in the visitor's email app. For a form that submits directly on the website, connect a form service or backend later.
+
+
+## Replace the homepage banner image
+
+1. Prepare a wide photo (about 1600 × 600 pixels works well).
+2. In the `assets` folder, replace `hero-banner.jpg` with your image, keeping the exact filename `hero-banner.jpg`.
+3. In `index.html`, update the hero image's `alt` text so it accurately describes your photo.
+4. Upload the updated files to GitHub and commit the changes.
+
+The homepage's visible main heading (`h1`) and browser/search title both use **Milwaukee Sylvestral Conservation Foundation**. Search engines decide how and when to display pages, so this improves clarity but does not guarantee a particular ranking or instant indexing.
