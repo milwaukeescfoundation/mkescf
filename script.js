@@ -1,5 +1,4 @@
-// Replace this value with the foundation's real public email address before launch.
-const CONTACT_EMAIL = "REPLACE_WITH_ORGANIZATION_EMAIL";
+const CONTACT_EMAIL = "milwaukeescfoundation@gmail.com";
 
 document.querySelectorAll("[data-year]").forEach((element) => {
   element.textContent = new Date().getFullYear();
@@ -21,11 +20,6 @@ if (contactForm) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const status = document.querySelector("#form-status");
-
-    if (!CONTACT_EMAIL || CONTACT_EMAIL === "REPLACE_WITH_ORGANIZATION_EMAIL") {
-      status.textContent = "The form is ready, but the foundation's real email address must be added in script.js before messages can be sent.";
-      return;
-    }
 
     const data = new FormData(contactForm);
     const subject = encodeURIComponent(`Website inquiry: ${data.get("topic")}`);

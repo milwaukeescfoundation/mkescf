@@ -1,49 +1,45 @@
-# MKESCF Website
+# Milwaukee Sylvestral Conservation Foundation website
 
-A plain HTML, CSS, and JavaScript website for the Milwaukee Sylvestral Conservation Foundation. It is designed for GitHub Pages and does not require a build step or framework.
+Static HTML, CSS, and JavaScript site for GitHub Pages. No build tools are required.
 
-## Files
+## Main files
+- `index.html` — homepage and homepage banner
+- `about.html` — organization background and mission
+- `events.html` — seasonal and recurring events
+- `gallery.html` — photo gallery
+- `get-involved.html` — volunteer information
+- `contact.html` — public email and Instagram
+- `styles.css` — site styling
+- `script.js` — navigation and contact form behavior
 
-- `index.html` — homepage
-- `about.html` — about the foundation
-- `events.html` — events page (no unconfirmed events invented)
-- `gallery.html` — gallery layout with clearly identified illustration placeholders
-- `get-involved.html` — volunteering and participation
-- `contact.html` — contact page and email-preparation form
-- `styles.css` — responsive site-wide design
-- `script.js` — mobile menu, copyright year, and contact form
-- `assets/` — original SVG logo and illustrations
+## Clearly named image files
+All images are in `assets/`:
+- `homepage-banner.jpg` — wide homepage hero photograph; replace this to change the homepage banner
+- `foundation-logo.svg` — header logo and favicon
+- `foundation-logo-light.svg` — logo used on dark backgrounds
+- `woodland-landscape-illustration.svg` — woodland landscape illustration
+- `woodland-plants-illustration.svg` — woodland plant illustration
 
-## Publish to GitHub Pages
+Gallery photographs belong in `assets/gallery/`. The gallery starts with the foundation’s supplied illustrations, not documentary photographs. Add photos using these suggested filenames:
+- `woodland-trail.jpg`
+- `native-plants.jpg`
+- `park-stewardship.jpg`
+- `wildlife-observation.jpg`
+- `seasonal-landscape.jpg`
 
-1. Download and unzip this folder.
-2. Open the `HewCutter/mkescf` repository on GitHub.
-3. Choose **Add file → Upload files**.
-4. Upload the contents of this folder, not the outer `mkescf-website` folder. `index.html` should be at the repository root.
-5. Commit the changes to `main`.
-6. Wait for GitHub Pages to redeploy, then refresh `https://mkescf.org`.
+To add gallery photos, place your image in `assets/gallery/`, then edit `gallery.html`. Copy an existing `<figure class="gallery-item">...</figure>` block and change the image filename, accurate alt text, category, and caption. You can add as many blocks as needed. Use JPG, PNG, or WebP images and optimize large files before uploading. The five slots are image locations, not supplied photographs; add your actual photos using these filenames.
 
-This replaces the starter `index.html` and adds the other pages. It does not require changes to DNS.
+## Contact details
+- Email: milwaukeescfoundation@gmail.com
+- Instagram: https://www.instagram.com/mkescf/
 
-## Before sharing the website widely
+The contact form opens the visitor's email app and prepares a message; GitHub Pages does not process form submissions itself.
 
-1. Open `script.js` and replace `REPLACE_WITH_ORGANIZATION_EMAIL` with the foundation's real public email address.
-2. Update the email description on `contact.html` if needed.
-3. Replace the temporary gallery illustrations with real photos the foundation has permission to publish.
-4. Add only confirmed event dates, times, locations, accessibility details, and signup instructions to `events.html`.
-5. Review the organization description and values on `about.html` so they accurately reflect the foundation.
-6. Add official social media links if desired.
+## Events
+The events page separates featured seasonal events from recurring weekly activities. Dates are shown for the upcoming 2026–2027 season. No event times, park locations, registration links, or sweepstakes rules have been invented; add those details when confirmed.
 
-## Contact form limitation
-
-GitHub Pages is static hosting and does not process form submissions on its own. Once the public email is set in `script.js`, this form prepares a message in the visitor's email app. For a form that submits directly on the website, connect a form service or backend later.
-
-
-## Replace the homepage banner image
-
-1. Prepare a wide photo (about 1600 × 600 pixels works well).
-2. In the `assets` folder, replace `hero-banner.jpg` with your image, keeping the exact filename `hero-banner.jpg`.
-3. In `index.html`, update the hero image's `alt` text so it accurately describes your photo.
-4. Upload the updated files to GitHub and commit the changes.
-
-The homepage's visible main heading (`h1`) and browser/search title both use **Milwaukee Sylvestral Conservation Foundation**. Search engines decide how and when to display pages, so this improves clarity but does not guarantee a particular ranking or instant indexing.
+## Publish
+1. Extract this ZIP.
+2. Upload the contents of the extracted folder to the root of the new GitHub repository (so `index.html` is at the repository root).
+3. Commit to `main` and wait for GitHub Pages to deploy.
+4. Keep the existing Cloudflare DNS records if the custom domain is already connected.

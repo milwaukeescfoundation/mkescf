@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact the Milwaukee Sylvestral Conservation Foundation.">
+  <meta name="description" content="Contact the Milwaukee Sylvestral Conservation Foundation about volunteering, events, and local park stewardship.">
   <meta name="theme-color" content="#173d2b"><title>Contact | Milwaukee Sylvestral Conservation Foundation</title>
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+  <link rel="icon" href="assets/foundation-logo.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><a class="brand" href="index.html"><img src="assets/logo.svg" alt="" class="brand-mark"><span class="brand-name">Milwaukee Sylvestral<br><strong>Conservation Foundation</strong></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="events.html">Events</a><a href="gallery.html">Gallery</a><a href="get-involved.html">Get involved</a><a class="active nav-contact" href="contact.html">Contact</a></nav></header>
+<header class="site-header"><a class="brand" href="index.html"><img src="assets/foundation-logo.svg" alt="" class="brand-mark"><span class="brand-name">Milwaukee Sylvestral<br><strong>Conservation Foundation</strong></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="events.html">Events</a><a href="gallery.html">Gallery</a><a href="get-involved.html">Get involved</a><a class="active nav-contact" href="contact.html">Contact</a></nav></header>
 <main id="main">
-  <section class="page-hero page-hero-compact"><div class="section-wrap page-hero-grid"><div><p class="eyebrow">Start a conversation</p><h1>Get in<br><em>touch.</em></h1></div><p class="page-lede">Questions, volunteer interest, project ideas, or photographs to share? We welcome people who want to learn more or contribute.</p></div></section>
+  <section class="page-hero page-hero-compact"><div class="section-wrap page-hero-grid"><div><p class="eyebrow">Start a conversation</p><h1>Get in<br><em>touch.</em></h1></div><p class="page-lede">Questions, volunteer interest, event details, or photographs to share? Contact the foundation by email or Instagram.</p></div></section>
   <section class="section-wrap contact-layout">
-    <div class="contact-copy"><div class="section-kicker">Contact the foundation</div><h2>Good things start with a message.</h2><p>This page is ready for the foundation's official contact details. Add a public email address and any social links before launching the site widely.</p><div class="contact-detail"><span class="detail-label">Location</span><p>Milwaukee, Wisconsin</p></div><div class="contact-detail"><span class="detail-label">Email</span><p class="setup-note">Add the foundation's official email in <code>script.js</code> and update this page.</p></div></div>
-    <form class="contact-form" id="contact-form">
-      <h2>Send a message</h2>
-      <p class="form-note">This form opens your email app after the foundation's email address is configured in <code>script.js</code>.</p>
+    <div class="contact-copy"><div class="section-kicker">Contact the foundation</div><h2>Good things start with a message.</h2><p>For questions about volunteering, events, or ways to support local parks, use either contact method below.</p>
+      <div class="contact-detail"><span class="detail-label">Email</span><p><a href="mailto:milwaukeescfoundation@gmail.com">milwaukeescfoundation@gmail.com</a></p></div>
+      <div class="contact-detail"><span class="detail-label">Instagram</span><p><a href="https://www.instagram.com/mkescf/" target="_blank" rel="noopener noreferrer">@mkescf</a></p></div>
+      <div class="contact-detail"><span class="detail-label">Location</span><p>Milwaukee, Wisconsin</p></div>
+    </div>
+    <form class="contact-form" id="contact-form"><h2>Send a message</h2><p class="form-note">Submitting this form opens your email app with a message addressed to the foundation.</p>
       <label for="name">Your name</label><input id="name" name="name" autocomplete="name" required>
       <label for="email">Your email</label><input id="email" name="email" type="email" autocomplete="email" required>
       <label for="topic">What is this about?</label><select id="topic" name="topic"><option>Volunteering</option><option>Events</option><option>Partnership</option><option>Photo or gallery contribution</option><option>General question</option></select>
       <label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea>
-      <button class="button button-dark" type="submit">Prepare email <span aria-hidden="true">→</span></button>
-      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      <button class="button button-dark" type="submit">Prepare email <span aria-hidden="true">→</span></button><p class="form-status" id="form-status" role="status" aria-live="polite"></p>
     </form>
   </section>
 </main>
