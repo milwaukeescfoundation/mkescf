@@ -29,3 +29,11 @@ To add a gallery image, upload the image to the repository root, then copy an ex
 ## Publish
 
 Commit changes to the branch configured in GitHub Pages (usually `main`). After deployment, hard-refresh the website with Ctrl+Shift+R.
+
+
+Latest image update: `feature-fieldgrass.jpg` is used in the homepage section titled “Healthy places take all of us.” The original `homepage-banner.jpg` remains in the homepage hero. The gallery includes a temporary `Snail on Walnut` placeholder (`placeholder-snail-on-walnut.svg`) until the actual photograph is supplied. Upload all files together into the repository root.
+
+Gallery placeholders added for: Mushroom on Log, Squirrel Trail, Acorn, Pinecone Lens Flare, Leaf Veins, Forest Trail, Wooded Trail, and Mushroom in Grass. Each placeholder is a separate root-level SVG file named `placeholder-*.svg`; replace the matching SVG reference in `gallery.html` with the final photograph when available.
+
+
+Gallery JPG placeholders: the gallery now references these exact filenames: `Snail on Walnut.jpg`, `Mushroom on Log.jpg`, `Squirrel Trail.jpg`, `Acorn.jpg`, `Pinecone Lens Flare.jpg`, `Leaf Veins.jpg`, `Forest Trail.jpg`, `Wooded Trail.jpg`, `Mushroom in Grass.jpg`. Each JPG is currently a copy of the supplied Morning Dew photograph so the image slot works immediately. Replace each file in GitHub with the real photograph using the same filename; no HTML edits are needed.
