@@ -1,67 +1,31 @@
 # Milwaukee Sylvestral Conservation Foundation website
 
-Static HTML, CSS, and JavaScript for GitHub Pages. No build tools are required.
+## Uploading to GitHub Pages
 
-## Main files
-- `index.html` — homepage and banner
-- `about.html` — organization background and mission
-- `events.html` — featured and recurring events
-- `gallery.html` — photo gallery
-- `get-involved.html` — volunteer information
-- `contact.html` — public email and Instagram
-- `styles.css` — site styling
-- `script.js` — navigation and contact form behavior
+Upload **every file in this folder directly into the repository root** (the same level as `index.html`). Do not upload this folder as a nested folder. This package deliberately keeps every image file beside the HTML files so image paths do not depend on nested folders.
 
-## Images: where to replace them
+Your repository root should contain `index.html`, `styles.css`, `script.js`, `mkescf-logo.png`, `mkescf-favicon.png`, `homepage-banner.jpg`, and the event/illustration image files.
 
-All website images are stored in `assets/`. Keep these filenames unless you also update the matching HTML reference.
+## Replacing images
 
-### Logo
-- `assets/mkescf-logo.png` — logo shown in the top navigation and page footer
-- `assets/mkescf-favicon.png` — small logo shown in the browser tab
+All images are in the repository root and have descriptive filenames:
 
-To change the logo, replace both PNG files with your new versions, keeping the exact filenames. Use a transparent-background PNG if possible.
+- `mkescf-logo.png` — logo used in the header and footer
+- `mkescf-favicon.png` — browser tab icon (replace if you change the logo)
+- `homepage-banner.jpg` — homepage hero/banner photo
+- `event-november-steps-challenge.svg` — November 5K Steps Challenge
+- `event-november-sweepstakes.svg` — November Sweepstakes
+- `event-community-sledding-day.svg` — Community Sledding Day
+- `event-groundhog-day-gala.svg` — Groundhog Day Gala
+- `woodland-plants-illustration.svg` — woodland plants illustration
+- `woodland-landscape-illustration.svg` — woodland landscape illustration
 
-### Homepage banner
-- `assets/homepage-banner.jpg` — wide photograph behind the homepage headline
+To use a different event photo, upload it to the repository root and change that event's `src` in `events.html`. Each event has its own image element inside its own event card.
 
-Replace this file with your preferred banner photo, keeping the exact filename. A wide image works best; recommended dimensions are about 1600 × 900 pixels or larger.
+## Gallery
 
-### Homepage and gallery illustrations
-- `assets/woodland-plants-illustration.svg`
-- `assets/woodland-landscape-illustration.svg`
-
-These are decorative illustrations used in the homepage feature and gallery. Their references are valid and the files are included in this ZIP.
-
-### Event images
-Each featured event has its own image in `assets/events/`:
-- `november-steps-challenge.svg`
-- `november-sweepstakes.svg`
-- `community-sledding-day.svg`
-- `groundhog-day-gala.svg`
-
-These are included illustrations so the event cards are never empty. To use a photograph instead, upload it into `assets/events/` and change the corresponding image `src` in `events.html`. For example, replace `assets/events/november-steps-challenge.svg` with `assets/events/november-steps-challenge.jpg`. Update the alt text to describe the actual photo. Recommended image size: 1200 × 600 pixels or larger.
-
-### Gallery photographs
-Put gallery photos in `assets/gallery/`. To add a photo:
-1. Upload the image into `assets/gallery/`.
-2. Open `gallery.html`.
-3. Copy an existing `<figure class="gallery-item">...</figure>` block.
-4. Change its image filename, alt text, category, and caption.
-
-Use descriptive filenames such as `native-plants-in-autumn.jpg` or `friday-park-cleanup.jpg`. Only use photos that accurately represent the foundation's activities; do not imply an event took place if it has not.
-
-## Contact details
-- Email: milwaukeescfoundation@gmail.com
-- Instagram: https://www.instagram.com/mkescf/
-
-The contact form opens the visitor's email app and prepares a message. GitHub Pages does not process form submissions itself.
-
-## Events
-The events page separates featured seasonal events from recurring weekly activities. Dates are set for the 2026–2027 season. Add times, park locations, registration links, and sweepstakes rules when confirmed.
+To add a gallery image, upload the image to the repository root, then copy an existing `<figure class="gallery-item">` block in `gallery.html`. Set the image `src` to the exact filename and update the alt text and caption.
 
 ## Publish
-1. Extract this ZIP.
-2. Upload the contents of the extracted folder to the root of the GitHub repository, so `index.html` is at the repository root.
-3. Commit to `main` and wait for GitHub Pages to deploy.
-4. Keep the existing Cloudflare DNS records if the custom domain is already connected.
+
+Commit changes to the branch configured in GitHub Pages (usually `main`). After deployment, hard-refresh the website with Ctrl+Shift+R.

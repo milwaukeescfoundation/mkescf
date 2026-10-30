@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#496b4c"/><stop offset=".55" stop-color="#294e36"/><stop offset="1" stop-color="#132f21"/></linearGradient>
+ <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#496b3f"/><stop offset="1" stop-color="#172e20"/></linearGradient>
+ <linearGradient id="light" x2="1" y2="1"><stop stop-color="#e5d6a2" stop-opacity=".65"/><stop offset="1" stop-color="#e5d6a2" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<circle cx="1100" cy="250" r="210" fill="#d9c79e" opacity=".17"/>
+<path d="M880 0 1280 0 1000 900 670 900Z" fill="url(#light)" opacity=".7"/>
+<path d="M0 540Q300 420 560 540T1080 520T1600 480V900H0Z" fill="#2a4b30"/>
+<path d="M0 660Q320 550 620 660T1200 620T1600 600V900H0Z" fill="url(#ground)"/>
+<g fill="#183725">
+ <path d="M90 650 150 190 210 650Z"/><path d="M0 590 90 90 180 590Z"/><path d="M220 670 300 140 380 670Z"/>
+ <path d="M420 680 500 220 580 680Z"/><path d="M1240 680 1330 70 1420 680Z"/><path d="M1400 650 1480 130 1560 650Z"/><path d="M1510 640 1570 210 1630 640Z"/>
+</g>
+<g fill="#355a39">
+ <path d="M0 500 70 160 140 500Z"/><path d="M170 540 260 40 350 540Z"/><path d="M360 560 425 180 490 560Z"/>
+ <path d="M1150 570 1220 150 1290 570Z"/><path d="M1350 560 1430 40 1510 560Z"/>
+</g>
+<g fill="#6e8754" opacity=".75">
+ <path d="M520 710q-130-100-230-30 90 0 160 65-90-10-130 40 110-15 180 25Z"/>
+ <path d="M1120 710q130-100 230-30-90 0-160 65 90-10 130 40-110-15-180 25Z"/>
+ <path d="M750 790q-90-100-180-40 65 10 115 65-60-5-85 40 75-10 150 20Z"/>
+</g>
+<g fill="#a4b487" opacity=".5">
+ <ellipse cx="760" cy="650" rx="12" ry="32" transform="rotate(-38 760 650)"/>
+ <ellipse cx="820" cy="700" rx="13" ry="34" transform="rotate(35 820 700)"/>
+ <ellipse cx="900" cy="675" rx="11" ry="30" transform="rotate(-25 900 675)"/>
+ <ellipse cx="700" cy="745" rx="10" ry="27" transform="rotate(25 700 745)"/>
+</g>
+<rect width="1600" height="900" fill="#0e2d1c" opacity=".18"/>
+</svg>

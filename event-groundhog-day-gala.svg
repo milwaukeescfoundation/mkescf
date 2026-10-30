@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="A winter gathering">
+<rect width="900" height="420" fill="#e9dfc8"/>
+<circle cx="710" cy="100" r="90" fill="#ffffff" opacity=".32"/>
+<path d="M0 330 Q180 220 350 320 T700 300 T900 290 V420 H0Z" fill="#66502f" opacity=".22"/>
+<path d="M0 370 Q190 280 370 360 T730 335 T900 345 V420 H0Z" fill="#66502f" opacity=".35"/>
+<text x="64" y="190" font-family="Georgia,serif" font-size="104" fill="#66502f" font-weight="bold">GALA</text>
+<text x="70" y="245" font-family="Arial,sans-serif" font-size="24" letter-spacing="3" fill="#66502f">A WINTER GATHERING</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+<title>Milwaukee Sylvestral Conservation Foundation emblem</title>
+<circle cx="60" cy="60" r="55" fill="none" stroke="#d9c79e" stroke-width="1.5"/>
+<path d="M60 92V34" fill="none" stroke="#f6f4ec" stroke-width="3" stroke-linecap="round"/>
+<path d="M60 56C39 55 31 42 34 28c17 1 28 10 26 28Z" fill="#b9cba7"/>
+<path d="M60 68c22-1 31-14 28-29-17 1-29 11-28 29Z" fill="#78976a"/>
+<path d="M60 78c-16 0-24-9-24-21 14 0 23 8 24 21Z" fill="#8eaa7d"/>
+<path d="M60 92c-13 0-23-3-31-11M60 92c13 0 23-3 31-11" fill="none" stroke="#d9c79e" stroke-width="2" stroke-linecap="round"/>
+<path d="M24 93c13-4 24-4 36-1 12-3 23-3 36 1" fill="none" stroke="#d9c79e" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
